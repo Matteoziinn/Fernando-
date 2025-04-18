@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.app.gerparque.controllers.BuyController">
+   <left>
+      <AnchorPane prefHeight="420.0" prefWidth="198.0" style="-fx-background-color: #003366;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="TRANSPARENT" layoutX="104.0" layoutY="210.0" radius="92.0" stroke="WHITE" strokeType="INSIDE" />
+            <BorderPane layoutX="1.0" prefHeight="64.0" prefWidth="200.0" style="-fx-background-color: #003366; -fx-border-color: white;">
+               <center>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="170.0" style="-fx-font-weight: bold;" text="Compra" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Corbel Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="407.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="boxAtracao" layoutX="125.0" layoutY="210.0" prefWidth="150.0" />
+            <TextField fx:id="cpfClienteID" alignment="CENTER" layoutX="126.0" layoutY="69.0" promptText="CPF" />
+            <ComboBox fx:id="buyPagamento" layoutX="127.0" layoutY="141.0" prefWidth="150.0" />
+            <Button fx:id="btnBuyBuy" layoutX="159.0" layoutY="263.0" mnemonicParsing="false" onAction="#BuyBtnId" prefHeight="26.0" prefWidth="83.0" style="-fx-background-radius: 8px;" text="Comprar" />
+            <Label layoutX="161.0" layoutY="41.0" style="-fx-font-weight: bold;" text="CPF do Cliente" />
+            <Label layoutX="143.0" layoutY="116.0" style="-fx-font-weight: bold;" text="Forma de pagamento" />
+            <Label layoutX="178.0" layoutY="184.0" style="-fx-font-weight: bold;" text="Atração" />
+            <Button fx:id="voltarBilheteria" layoutX="167.0" layoutY="302.0" mnemonicParsing="false" onAction="#vltBilheteriaBtn" prefHeight="27.0" prefWidth="64.0" style="-fx-background-radius: 8px;" text="Voltar" />
+
+
+            <Label fx:id="labelStatus" layoutX="193.0" layoutY="14.0" prefHeight="17.0" prefWidth="14.0" style="-fx-font-weight: bold;" textFill="RED" />
+            <Button fx:id="btnAtrcoes" layoutX="27.0" layoutY="257.0" mnemonicParsing="false" onAction="#IrAtracoes" prefHeight="38.0" prefWidth="92.0" style="-fx-background-radius: 12;" text="ver Atrações" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
